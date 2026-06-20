@@ -60,11 +60,11 @@ def stream_markup_timer(_, chat_id, played, dur):
             )
         ],
         [   
-             ikb(text="▷", callback_data=f"controls resume {chat_id}", style=ButtonStyle.SUCCESS),
-             ikb(text="II", callback_data=f"controls pause {chat_id}", style=ButtonStyle.SUCCESS),
-             ikb(text="⥁", callback_data=f"controls replay {chat_id}", style=ButtonStyle.PRIMARY),
-             ikb(text="‣‣I", callback_data=f"controls skip {chat_id}", style=ButtonStyle.DANGER),
-             ikb(text="▢", callback_data=f"controls stop {chat_id}", style=ButtonStyle.DANGER),
+             InlineKeyboardButton(text="▉▉", callback_data=f"ADMIN Pause|{chat_id}"),
+             InlineKeyboardButton(text="▷", callback_data=f"ADMIN Resume|{chat_id}"),
+             InlineKeyboardButton(text="↻", callback_data=f"ADMIN Replay|{chat_id}"),
+             InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
+             InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
         ],
     ]
     
@@ -74,11 +74,11 @@ def stream_markup_timer(_, chat_id, played, dur):
 def stream_markup(_, chat_id):
     buttons = [
         [
-             ikb(text="▷", callback_data=f"controls resume {chat_id}", style=ButtonStyle.SUCCESS),
-             ikb(text="II", callback_data=f"controls pause {chat_id}", style=ButtonStyle.SUCCESS),
-             ikb(text="⥁", callback_data=f"controls replay {chat_id}", style=ButtonStyle.PRIMARY),
-             ikb(text="‣‣I", callback_data=f"controls skip {chat_id}", style=ButtonStyle.DANGER),
-             ikb(text="▢", callback_data=f"controls stop {chat_id}", style=ButtonStyle.DANGER),
+             InlineKeyboardButton(text="▉▉", callback_data=f"ADMIN Pause|{chat_id}"),
+             InlineKeyboardButton(text="▷", callback_data=f"ADMIN Resume|{chat_id}"),
+             InlineKeyboardButton(text="↻", callback_data=f"ADMIN Replay|{chat_id}"),
+             InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
+             InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
         ],
     ]
     return buttons
